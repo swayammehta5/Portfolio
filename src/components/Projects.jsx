@@ -99,8 +99,21 @@ const Projects = () => {
                 </div>
               </div>
             </motion.div>
+            
           ))}
         </div>
+        {/* ✅ View More Projects Button */}
+      <div className="text-center mt-12">
+        <a 
+          href="https://github.com/swayammehta5" 
+          target="_blank" 
+          rel="noreferrer"
+          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <Github size={18} className="mr-2" />
+          View More Projects
+        </a>
+      </div>
 
       </div>
     </section>

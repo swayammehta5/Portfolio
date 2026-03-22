@@ -70,14 +70,11 @@ const Contact = () => {
               <div className="mt-10 border-t border-white/10 pt-8">
                 <h4 className="text-slate-300 font-medium mb-4">Social Profiles</h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/50 text-slate-300 hover:text-white transition-all duration-300">
+                  <a href="https://github.com/swayammehta5" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/50 text-slate-300 hover:text-white transition-all duration-300">
                     <Github size={20} />
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/50 text-slate-300 hover:text-white transition-all duration-300">
+                  <a href="https://www.linkedin.com/in/swayammehta5" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/50 text-slate-300 hover:text-white transition-all duration-300">
                     <Linkedin size={20} />
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/50 text-slate-300 hover:text-white transition-all duration-300">
-                    <Twitter size={20} />
                   </a>
                 </div>
               </div>

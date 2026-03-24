@@ -16,12 +16,12 @@ const Skills = () => {
     },
     {
       title: "Tools & Cloud",
-      icon: <Terminal className="text-indigo-400 mb-4" size={32} />,
+      icon: <Terminal className="text-cyan-400 mb-4" size={32} />,
       skills: ["Git & GitHub", "AWS", "Android Studio", "Figma", "VS Code","Postman"]
     },
     {
       title: "Core Skills",
-      icon: <Database className="text-purple-400 mb-4" size={32} />,
+      icon: <Database className="text-teal-400 mb-4" size={32} />,
       skills: ["RESTful APIs", "UI/UX Design", "System Architecture", "Performance Optimization"]
     }
   ];

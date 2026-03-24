@@ -20,7 +20,7 @@ const Certifications = () => {
       title: "Cloud Computing",
       issuer: "NPTEL",
       date: "Apr 2025",
-      icon: <Award className="text-purple-400 mb-4" size={36} />
+      icon: <Award className="text-teal-400 mb-4" size={36} />
     }
   ];
 

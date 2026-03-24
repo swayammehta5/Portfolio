@@ -70,7 +70,7 @@ const Education = () => {
                   <div className="pl-10">
                     <p className="text-xl text-slate-300 font-medium mb-2">{edu.degree}</p>
                     <div className="flex items-center text-slate-400">
-                      <Trophy className="text-purple-400 mr-2" size={18} />
+                      <Trophy className="text-teal-400 mr-2" size={18} />
                       {edu.score}
                     </div>
                   </div>

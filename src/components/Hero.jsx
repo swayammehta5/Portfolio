@@ -39,7 +39,8 @@ const Hero = () => {
 
             <a 
               // href="https://drive.google.com/file/d/1Gm5x0RrzE8k6Zt-j_dR5dmpHBJX35GCp/view" 
-              href="https://drive.google.com/file/d/16dautYJWtYXWnIkMHg7l_SgsBx8vev5g/view"
+              // href="https://drive.google.com/file/d/16dautYJWtYXWnIkMHg7l_SgsBx8vev5g/view"
+              href="https://drive.google.com/file/d/16dautYJWtYXWnIkMHg7l_SgsBx8vev5g/view?usp=sharing"
               target="_blank" 
               rel="noopener noreferrer"
               className="px-8 py-3 rounded-full glass-card hover:bg-white/10 text-white font-medium transition-all duration-300 flex items-center justify-center gap-2"

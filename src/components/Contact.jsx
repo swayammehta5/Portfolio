@@ -1,20 +1,26 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Linkedin, Github, Twitter, Send } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, Send } from 'lucide-react';
 
 const Contact = () => {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  const [submissionMessage, setSubmissionMessage] = useState('');
 
   const handleChange = (e) => {
-    setFormState({...formState, [e.target.name]: e.target.value});
+    setFormState({ ...formState, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate form submission
-    console.log(formState);
-    alert("Message sent successfully!");
-    setFormState({ name: '', email: '', message: '' });
+    const subject = encodeURIComponent(`Portfolio inquiry from ${formState.name}`);
+    const body = encodeURIComponent(
+      `${formState.message}\n\nFrom: ${formState.name}\nEmail: ${formState.email}`,
+    );
+
+    window.location.href = `mailto:mehtaswayam555@gmail.com?subject=${subject}&body=${body}`;
+    setSubmissionMessage(
+      "Your email app should open with your message. If it doesn't, email mehtaswayam555@gmail.com directly.",
+    );
   };
 
   return (
@@ -54,7 +60,12 @@ const Contact = () => {
                   <Mail className="text-primary mt-1 mr-4" size={24} />
                   <div>
                     <h4 className="text-slate-300 font-medium">Email</h4>
-                    <p className="text-slate-400 text-sm mt-1 cursor-pointer hover:text-white transition-colors">mehtaswayam555@gmail.com</p>
+                    <a
+                      href="mailto:mehtaswayam555@gmail.com"
+                      className="text-slate-400 text-sm mt-1 hover:text-white transition-colors"
+                    >
+                      mehtaswayam555@gmail.com
+                    </a>
                   </div>
                 </div>
                 
@@ -70,10 +81,10 @@ const Contact = () => {
               <div className="mt-10 border-t border-white/10 pt-8">
                 <h4 className="text-slate-300 font-medium mb-4">Social Profiles</h4>
                 <div className="flex space-x-4">
-                  <a href="https://github.com/swayammehta5" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/50 text-slate-300 hover:text-white transition-all duration-300">
+                  <a href="https://github.com/swayammehta5" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/50 text-slate-300 hover:text-white transition-all duration-300">
                     <Github size={20} />
                   </a>
-                  <a href="https://www.linkedin.com/in/swayammehta5" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/50 text-slate-300 hover:text-white transition-all duration-300">
+                  <a href="https://www.linkedin.com/in/swayammehta5" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/50 text-slate-300 hover:text-white transition-all duration-300">
                     <Linkedin size={20} />
                   </a>
                 </div>
@@ -136,6 +147,9 @@ const Contact = () => {
               >
                 Send Message <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </button>
+              <p className="mt-4 text-sm text-slate-400" role="status" aria-live="polite">
+                {submissionMessage}
+              </p>
             </form>
           </motion.div>
 

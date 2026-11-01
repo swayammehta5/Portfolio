@@ -9,6 +9,15 @@ import travel from '../assets/travel-mate.png';
 const Projects = () => {
   const projects = [
     {
+    title: "NexBanking",
+    description:
+      "Developed a secure full-stack digital banking platform featuring account management, deposits, withdrawals, fund transfers, beneficiary management, transaction history, spending analytics, and real-time notifications with JWT authentication and transaction PIN verification.",
+    tech: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "Prisma ORM", "JWT", "bcrypt"],
+    github: "https://github.com/swayammehta5/NexBanking",
+    live: "https://nexbanking-frontend.onrender.com/",
+    image: nexbanking
+  },
+    {
       title: "Productivity Tracker",
       description:
         "Developed a full-stack productivity platform enabling users to manage tasks and habits with structured prioritization, real-time tracking, and an intuitive user interface.",
@@ -24,15 +33,16 @@ const Projects = () => {
       tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Geolocation API"],
       github: "https://github.com/swayammehta5/Travel-Mate",
       image: travel // ✅ FIXED
-    },
-    {
-      title: "Weather App",
-      description:
-        "Developed a responsive weather application using React.js and external APIs to display real-time weather data with a clean and user-friendly interface.",
-      tech: ["React.js", "API", "CSS", "HTML"],
-      github: "https://github.com/swayammehta5/Weather-App",
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=800&auto=format&fit=crop"
     }
+    // ,
+    // {
+    //   title: "Weather App",
+    //   description:
+    //     "Developed a responsive weather application using React.js and external APIs to display real-time weather data with a clean and user-friendly interface.",
+    //   tech: ["React.js", "API", "CSS", "HTML"],
+    //   github: "https://github.com/swayammehta5/Weather-App",
+    //   image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=800&auto=format&fit=crop"
+    // }
   ];
 
   return (

@@ -50,7 +50,7 @@ const About = () => {
             className="w-full md:w-1/2 grid grid-cols-2 gap-6"
           >
             <div className="glass-card p-6 text-center hover:bg-white/10 transition-all duration-300 cursor-default">
-              <div className="text-4xl font-bold text-primary mb-2">250+</div>
+              <div className="text-4xl font-bold text-primary mb-2">300+</div>
               <div className="text-slate-400 font-medium">DSA Problems Solved</div>
             </div>
             <div className="glass-card p-6 text-center hover:bg-white/10 transition-all duration-300 cursor-default">

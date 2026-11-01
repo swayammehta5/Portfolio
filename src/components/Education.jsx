@@ -8,7 +8,7 @@ const Education = () => {
       institution: "Lovely Professional University",
       degree: "B.Tech in Computer Science and Engineering",
       duration: "2023 – 2027",
-      score: "CGPA: 7.8"
+      score: "CGPA: 7.83"
     },
     {
       institution: "Kendriya Vidyalaya",
